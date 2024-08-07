@@ -55,7 +55,7 @@
     height: 230px;
     width: 230px;
     display: block;
-    background: #F6EC4F;
+    background: #00061a;
     border-radius: 50%;
     position: relative;
 }
@@ -107,7 +107,7 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #00061A;
+  color: #ffffff;
 }
 .circle-main .circle img {
     position: absolute;
