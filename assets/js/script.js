@@ -704,3 +704,46 @@
 	
 
 })(window.jQuery);
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const serviceItems = document.querySelectorAll(".service__item");
+        const loadMoreBtn = document.getElementById("loadMoreBtn");
+        const showLessBtn = document.getElementById("showLessBtn");
+
+        let initialItemsToShow = 6; // Default number of items to show
+
+        // Function to display services
+        function displayServices(itemsToShow) {
+            serviceItems.forEach((item, index) => {
+                if (index < itemsToShow) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            // Toggle buttons based on items to show
+            if (itemsToShow >= serviceItems.length) {
+                loadMoreBtn.style.display = "none";
+                showLessBtn.style.display = "inline-block";
+            } else {
+                loadMoreBtn.style.display = "inline-block";
+                showLessBtn.style.display = "none";
+            }
+        }
+
+        // Load more button click event
+        loadMoreBtn.addEventListener("click", function() {
+            displayServices(serviceItems.length); // Show all items
+        });
+
+        // Show less button click event
+        showLessBtn.addEventListener("click", function() {
+            displayServices(initialItemsToShow); // Show only initial number of items
+        });
+
+        // Initial display of services
+        displayServices(initialItemsToShow);
+    });
+

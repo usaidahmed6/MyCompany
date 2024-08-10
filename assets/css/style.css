@@ -2696,3 +2696,22 @@ ul.service__details__1__cat {
     font-weight: 400;
     line-height: 36px;
 }
+
+.last{
+    height: 180px;
+    width: 500px;
+    border: 2px,solid,#910694;
+    margin-top: 30px;
+    margin-left: 200px;
+   border-radius: 9%;
+   background-color: #910694;
+   
+
+        
+}
+
+.last2{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
