@@ -50,6 +50,7 @@ body {
   background-repeat:no-repeat;
   background-position:center top;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 @media (min-width:1296px) {
